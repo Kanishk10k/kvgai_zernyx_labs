@@ -1,0 +1,45 @@
+.section {
+  padding: clamp(56px, 8vw, 96px) var(--gutter);
+  background: var(--color-bg);
+}
+
+.inner {
+  max-width: var(--max-width);
+  margin-inline: auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.title {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(26px, 3vw, 36px);
+  font-weight: 500;
+  line-height: 1.2;
+  color: #101828;
+  margin-bottom: 24px;
+}
+
+.subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(14px, 1.25vw, 18px);
+  font-weight: 400;
+  line-height: 1.78;
+  color: #667085;
+  max-width: 1100px;
+  margin-inline: auto;
+}
+
+.imageRow {
+  width: 100%;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  display: block;
+}

@@ -1,0 +1,11 @@
+.section {
+  width: 100%;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: clamp(140px, 18vw, 260px);
+  object-fit: cover;
+  display: block;
+}
