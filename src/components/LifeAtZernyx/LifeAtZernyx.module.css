@@ -3,12 +3,15 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
+  background: #000;
 }
 
 .image {
   width: 100%;
-  height: clamp(180px, 22vw, 300px);
+  aspect-ratio: 1440 / 307.68;
+  max-height: 308px;
   object-fit: cover;
+  object-position: center;
   display: block;
   margin: 0;
 }
