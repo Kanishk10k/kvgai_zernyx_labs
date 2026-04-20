@@ -1,11 +1,14 @@
 .section {
   width: 100%;
+  margin: 0;
+  padding: 0;
   overflow: hidden;
 }
 
 .image {
   width: 100%;
-  height: clamp(140px, 18vw, 260px);
+  height: clamp(180px, 22vw, 300px);
   object-fit: cover;
   display: block;
+  margin: 0;
 }

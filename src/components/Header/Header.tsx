@@ -3,7 +3,7 @@ import styles from './Header.module.css'
 
 const navItems = [
   { label: 'Home', href: '#top', active: true },
-  { label: 'About Us', href: '#about' },
+  { label: 'About Us', href: '#about', variant: 'aboutUs' as const },
   { label: 'Our Solutions', href: '#core-verticals' },
   { label: 'Zernyx', href: '#about' },
   { label: 'Zernyx Hub', href: '#integrated-approach' },
@@ -23,7 +23,13 @@ export default function Header() {
               <li key={item.label}>
                 <a
                   href={item.href}
-                  className={`${styles.navLink} ${item.active ? styles.active : ''}`}
+                  className={[
+                    styles.navLink,
+                    item.active ? styles.active : '',
+                    item.variant ? styles[item.variant] : '',
+                  ]
+                    .filter(Boolean)
+                    .join(' ')}
                 >
                   {item.label}
                 </a>

@@ -3,12 +3,18 @@ html {
   scroll-padding-top: var(--header-height);
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: #ffffff;
+}
+
 body {
   font-family: var(--font-sans);
   font-size: 16px;
   line-height: 1.5;
   color: var(--color-text-900);
-  background: var(--color-bg);
   overflow-x: hidden;
 }
 
