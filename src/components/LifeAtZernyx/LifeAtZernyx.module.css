@@ -8,10 +8,7 @@
 
 .image {
   width: 100%;
-  aspect-ratio: 1440 / 307.68;
-  max-height: 308px;
-  object-fit: cover;
-  object-position: center;
+  height: auto;
   display: block;
   margin: 0;
 }

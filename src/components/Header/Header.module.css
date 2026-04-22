@@ -19,7 +19,7 @@
   min-height: 80px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 0 48px;
   gap: 48px;
   background: #FFFFFF;
@@ -35,6 +35,8 @@
 
 .nav {
   display: none;
+  flex: 1 1 auto;
+  padding-right: 164px;
 }
 
 .navList {
@@ -44,6 +46,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   gap: 48px;
 }
 

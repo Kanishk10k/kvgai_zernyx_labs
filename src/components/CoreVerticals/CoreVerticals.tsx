@@ -1,4 +1,4 @@
-import { FiClipboard, FiLayers, FiBarChart2 } from 'react-icons/fi'
+import { FiClipboard, FiCheckSquare, FiBarChart2 } from 'react-icons/fi'
 import styles from './CoreVerticals.module.css'
 
 const verticals = [
@@ -8,7 +8,7 @@ const verticals = [
     body: 'End-to-end experimental research across drug products, advanced cosmetic formulations, and functional nutraceuticals grounded in formulation science and translational development.',
   },
   {
-    Icon: FiLayers,
+    Icon: FiCheckSquare,
     title: 'Formulation & Technology Validation',
     body: 'Structured formulation and validation programs that transform concepts into stable, performance-tested, and development-ready prototypes.',
   },
