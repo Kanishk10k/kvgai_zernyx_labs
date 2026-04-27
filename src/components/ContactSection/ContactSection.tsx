@@ -11,12 +11,12 @@ const contactDetails = [
 ]
 
 const orbitAvatars = [
-  { initials: 'AK', x: '14%', y: '12%', orbit: 0 },
-  { initials: 'JM', x: '78%', y: '18%', orbit: 1 },
-  { initials: 'SR', x: '6%', y: '52%', orbit: 2 },
-  { initials: 'PD', x: '70%', y: '60%', orbit: 1 },
-  { initials: 'LC', x: '20%', y: '82%', orbit: 2 },
-  { initials: 'MV', x: '60%', y: '88%', orbit: 0 },
+  { src: '/orb_image_1.jpg', x: '9%', y: '21%', size: 56, focus: '50% 18%' },
+  { src: '/orb_image_2.jpg', x: '43%', y: '11%', size: 32, focus: '50% 22%' },
+  { src: '/orb_image_3.jpg', x: '20%', y: '50%', size: 44, focus: '60% 22%' },
+  { src: '/orb_image_4.jpg', x: '43%', y: '69%', size: 50, focus: '50% 20%' },
+  { src: '/orb_image_5.jpg', x: '18%', y: '88%', size: 38, focus: '62% 28%' },
+  { src: '/orb_image_6.jpg', x: '50%', y: '90%', size: 42, focus: '50% 18%' },
 ]
 
 export default function ContactSection() {
@@ -30,15 +30,23 @@ export default function ContactSection() {
               <div className={`${styles.orbit} ${styles.orbit1}`} />
               <div className={`${styles.orbit} ${styles.orbit2}`} />
               <div className={`${styles.orbit} ${styles.orbit3}`} />
+              <div className={`${styles.orbit} ${styles.orbit4}`} />
+              <div className={`${styles.orbit} ${styles.orbit5}`} />
               <div className={styles.center} />
               {orbitAvatars.map((a, i) => (
-                <div
+                <img
                   key={i}
+                  src={a.src}
+                  alt=""
                   className={styles.avatar}
-                  style={{ left: a.x, top: a.y }}
-                >
-                  <span>{a.initials}</span>
-                </div>
+                  style={{
+                    left: a.x,
+                    top: a.y,
+                    width: a.size,
+                    height: a.size,
+                    objectPosition: a.focus,
+                  }}
+                />
               ))}
             </div>
 
