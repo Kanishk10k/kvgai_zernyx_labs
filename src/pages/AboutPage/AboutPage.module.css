@@ -1,0 +1,38 @@
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
+.placeholder {
+  padding: clamp(64px, 10vw, 120px) 0;
+  background: var(--color-bg-soft, #F0F9F9);
+}
+
+.placeholderInner {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: center;
+}
+
+.eyebrow {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-primary, #009293);
+}
+
+.title {
+  font-size: clamp(32px, 5vw, 56px);
+  font-weight: 700;
+  line-height: 1.1;
+  background: linear-gradient(
+    90deg,
+    var(--color-primary-dark, #002D2D),
+    var(--color-primary, #009293)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}

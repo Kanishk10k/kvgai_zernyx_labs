@@ -1,15 +1,23 @@
+import { Link } from 'react-router-dom'
 import Logo from '../Logo'
 import styles from './Header.module.css'
 
-const navItems = [
-  { label: 'Home', href: '#top', active: true },
-  { label: 'About Us', href: '#about', variant: 'aboutUs' as const },
-  { label: 'Our Solutions', href: '#core-verticals' },
-  { label: 'Zernyx', href: '#about' },
-  { label: 'Zernyx Hub', href: '#integrated-approach' },
-  { label: 'Our Products', href: '#core-verticals' },
-  { label: 'FAQs', href: '#mission' },
-  { label: 'Get In Touch', href: '#contact' },
+type NavItem = {
+  label: string
+  to: string
+  active?: boolean
+  variant?: 'aboutUs'
+}
+
+const navItems: NavItem[] = [
+  { label: 'Home', to: '/', active: true },
+  { label: 'About Us', to: '/about', variant: 'aboutUs' },
+  { label: 'Our Solutions', to: '/#core-verticals' },
+  { label: 'Zernyx', to: '/#about' },
+  { label: 'Zernyx Hub', to: '/#integrated-approach' },
+  { label: 'Our Products', to: '/#core-verticals' },
+  { label: 'FAQs', to: '/#mission' },
+  { label: 'Get In Touch', to: '/#contact' },
 ]
 
 export default function Header() {
@@ -21,8 +29,8 @@ export default function Header() {
           <ul className={styles.navList}>
             {navItems.map((item) => (
               <li key={item.label}>
-                <a
-                  href={item.href}
+                <Link
+                  to={item.to}
                   className={[
                     styles.navLink,
                     item.active ? styles.active : '',
@@ -32,7 +40,7 @@ export default function Header() {
                     .join(' ')}
                 >
                   {item.label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>

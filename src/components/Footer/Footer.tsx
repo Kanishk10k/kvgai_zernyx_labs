@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { FaFacebookF, FaLinkedinIn, FaInstagram, FaXTwitter } from 'react-icons/fa6'
 import Logo from '../Logo'
 import styles from './Footer.module.css'
@@ -6,29 +7,29 @@ const linkColumns = [
   {
     title: 'Platform',
     links: [
-      { label: 'Home', href: '#top' },
-      { label: 'Our Core Verticals', href: '#core-verticals' },
-      { label: 'What Sets Us Apart', href: '#integrated-approach' },
-      { label: 'FAQs', href: '#mission' },
+      { label: 'Home', to: '/' },
+      { label: 'Our Core Verticals', to: '/#core-verticals' },
+      { label: 'What Sets Us Apart', to: '/#integrated-approach' },
+      { label: 'FAQs', to: '/#mission' },
     ],
   },
   {
     title: 'Company',
     links: [
-      { label: 'About', href: '#about' },
-      { label: 'Get In Touch', href: '#contact' },
-      { label: 'Terms of Use', href: '#' },
-      { label: 'Privacy Policy', href: '#' },
-      { label: 'IP Disclaimer', href: '#' },
+      { label: 'About', to: '/about' },
+      { label: 'Get In Touch', to: '/#contact' },
+      { label: 'Terms of Use', to: '#' },
+      { label: 'Privacy Policy', to: '#' },
+      { label: 'IP Disclaimer', to: '#' },
     ],
   },
   {
     title: 'Our Products',
     links: [
-      { label: 'Zernyx Labs', href: '#' },
-      { label: 'Zernyx Hub', href: '#' },
-      { label: 'TRL Calculator', href: '#' },
-      { label: 'i-Office', href: '#' },
+      { label: 'Zernyx Labs', to: '#' },
+      { label: 'Zernyx Hub', to: '#' },
+      { label: 'TRL Calculator', to: '#' },
+      { label: 'i-Office', to: '#' },
     ],
   },
 ]
@@ -73,9 +74,9 @@ export default function Footer() {
               <ul className={styles.linkList}>
                 {col.links.map((link) => (
                   <li key={link.label}>
-                    <a href={link.href} className={styles.link}>
+                    <Link to={link.to} className={styles.link}>
                       {link.label}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
