@@ -1,38 +1,448 @@
 .page {
   display: flex;
   flex-direction: column;
+  background: #FFFFFF;
 }
 
-.placeholder {
-  padding: clamp(64px, 10vw, 120px) 0;
-  background: var(--color-bg-soft, #F0F9F9);
+.hero {
+  width: 100%;
+  line-height: 0;
 }
 
-.placeholderInner {
+.heroImage {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.whoWeAre {
+  width: 100%;
+  background: #FFFFFF;
+  padding: clamp(64px, 9vw, 120px) var(--gutter, 24px) clamp(32px, 4vw, 48px);
+}
+
+.whoWeAreInner {
+  max-width: 1289px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+}
+
+.whoWeAreTitle {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 72px;
+  color: #101828;
+}
+
+.whoWeAreBody {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  color: #667085;
+}
+
+@media (max-width: 768px) {
+  .whoWeAreTitle {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .whoWeAreBody {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+.visionMission {
+  width: 100%;
+  background: #FFFFFF;
+  padding: clamp(32px, 4vw, 48px) var(--gutter, 24px) clamp(16px, 2vw, 24px);
+  display: flex;
+  justify-content: center;
+}
+
+.visionMissionCard {
+  width: 100%;
+  max-width: 902px;
+  background: rgba(0, 146, 147, 0.04);
+  box-shadow: -2px 2px 7px 1px rgba(0, 146, 147, 0.2);
+  border-radius: 48px;
+  padding: 24px 32px 34px;
+  display: flex;
+  flex-direction: column;
+  gap: 46px;
+}
+
+.vmBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 16px;
   text-align: center;
 }
 
-.eyebrow {
-  font-size: 14px;
+.vmTitle {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
   font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--color-primary, #009293);
+  font-size: 24px;
+  line-height: 29px;
+  color: #009293;
 }
 
-.title {
-  font-size: clamp(32px, 5vw, 56px);
-  font-weight: 700;
-  line-height: 1.1;
-  background: linear-gradient(
-    90deg,
-    var(--color-primary-dark, #002D2D),
-    var(--color-primary, #009293)
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+.vmBody {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #667085;
+  max-width: 725px;
+}
+
+@media (max-width: 768px) {
+  .visionMissionCard {
+    border-radius: 32px;
+    padding: 28px 20px 32px;
+    gap: 32px;
+  }
+  .vmBody {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.operPhilo {
+  width: 100%;
+  background: #FFFFFF;
+  padding: clamp(24px, 3vw, 40px) var(--gutter, 24px) clamp(48px, 7vw, 96px);
+}
+
+.operPhiloInner {
+  max-width: 1161px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.operPhiloTitle {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 72px;
+  color: #101828;
+  text-align: center;
+}
+
+.operPhiloBody {
+  margin: 0;
+  max-width: 1133px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #667085;
+  text-align: center;
+}
+
+.operPhiloGrid {
+  width: 100%;
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: 578fr 536fr;
+  gap: 47px;
+}
+
+.operPhiloLeftCol {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.operPhiloCard {
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #D9D9D9;
+}
+
+.operPhiloCardShort {
+  aspect-ratio: 578 / 153;
+}
+
+.operPhiloCardTall {
+  aspect-ratio: 578 / 217;
+}
+
+.operPhiloCardRight {
+  aspect-ratio: 536 / 420;
+}
+
+.operPhiloImage {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 1023px) {
+  .operPhiloGrid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    margin-top: 48px;
+  }
+  .operPhiloLeftCol {
+    gap: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .operPhiloTitle {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .operPhiloBody {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
+.howWeOperate {
+  width: 100%;
+  background: rgba(0, 146, 147, 0.04);
+  padding: clamp(20px, 2.5vw, 32px) var(--gutter, 24px) clamp(48px, 7vw, 96px);
+}
+
+.howWeOperateInner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.howWeOperateTitle {
+  margin: 0 0 64px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 72px;
+  color: #101828;
+  text-align: center;
+}
+
+.howWeOperateGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.howWeOperateList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.howWeOperateItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.howWeOperateIconWrap {
+  flex: 0 0 56px;
+  width: 56px;
+  height: 56px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 146, 147, 0.1);
+  border-radius: 14px;
+}
+
+.howWeOperateIcon {
+  width: 26px;
+  height: 26px;
+  color: #009293;
+  stroke-width: 2;
+}
+
+.howWeOperateText {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.howWeOperateItemTitle {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #101828;
+}
+
+.howWeOperateItemBody {
+  margin: 4px 0 0;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #667085;
+}
+
+.howWeOperateImageWrap {
+  width: 100%;
+  aspect-ratio: 745 / 476;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #D9D9D9;
+}
+
+.howWeOperateImage {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 1023px) {
+  .howWeOperateGrid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .howWeOperateImageWrap {
+    max-width: 745px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .howWeOperateTitle {
+    font-size: 28px;
+    line-height: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+.boundaries {
+  width: 100%;
+  background: #FFFFFF;
+  padding: clamp(48px, 7vw, 96px) var(--gutter, 24px);
+}
+
+.boundariesInner {
+  max-width: 1233px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.boundariesTitle {
+  margin: 0 0 48px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 72px;
+  color: #101828;
+  text-align: center;
+}
+
+.boundariesCard {
+  width: 100%;
+  background: linear-gradient(180deg, #E6F7F7 0%, #FFFFFF 100%);
+  border: 1.10776px solid rgba(0, 146, 147, 0.1);
+  border-radius: 16px;
+  padding: 48px clamp(24px, 14vw, 198px);
+}
+
+.boundariesList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 32px;
+  row-gap: 40px;
+}
+
+.boundariesItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.boundariesIconWrap {
+  flex: 0 0 48px;
+  width: 48px;
+  height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFFFFF;
+  border: 1.10776px solid rgba(0, 146, 147, 0.1);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px -1px rgba(0, 0, 0, 0.1);
+  border-radius: 14px;
+}
+
+.boundariesIcon {
+  width: 24px;
+  height: 24px;
+  color: #009293;
+  stroke-width: 1.8;
+}
+
+.boundariesItemText {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #101828;
+}
+
+@media (max-width: 768px) {
+  .boundariesTitle {
+    font-size: 28px;
+    line-height: 40px;
+    margin-bottom: 32px;
+  }
+  .boundariesCard {
+    padding: 32px 20px;
+  }
+  .boundariesList {
+    grid-template-columns: 1fr;
+    row-gap: 24px;
+  }
+  .boundariesItemText {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
