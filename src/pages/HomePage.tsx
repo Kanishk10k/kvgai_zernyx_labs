@@ -6,10 +6,11 @@ import BuiltForValidation from '../components/BuiltForValidation/BuiltForValidat
 import IntegratedApproach from '../components/IntegratedApproach/IntegratedApproach'
 import Mission from '../components/Mission/Mission'
 import ContactSection from '../components/ContactSection/ContactSection'
+import styles from './HomePage.module.css'
 
 export default function HomePage() {
   return (
-    <>
+    <div className={styles.page}>
       <LifeAtZernyx />
       <Hero />
       <About />
@@ -18,6 +19,6 @@ export default function HomePage() {
       <IntegratedApproach />
       <Mission />
       <ContactSection />
-    </>
+    </div>
   )
 }

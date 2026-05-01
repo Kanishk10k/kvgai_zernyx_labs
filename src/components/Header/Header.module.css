@@ -5,48 +5,65 @@
   right: 0;
   z-index: 100;
   width: 100%;
-  min-height: 80px;
   height: 80px;
   background: #FFFFFF;
-  background-color: #FFFFFF;
-  display: block;
-  flex: 0 0 80px;
 }
 
 .inner {
+  position: relative;
   width: 100%;
+  max-width: 1440px;
   height: 80px;
-  min-height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 0 48px;
-  gap: 48px;
-  background: #FFFFFF;
+  margin: 0 auto;
 }
 
 .logo {
-  flex: 0 0 auto;
+  position: absolute;
+  left: 48px;
+  top: 50%;
+  transform: translateY(-50%);
   width: 116px;
   height: 30px;
   display: inline-flex;
   align-items: center;
 }
 
+.menuToggle {
+  display: none;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  color: #101828;
+  cursor: pointer;
+  padding: 0;
+  z-index: 2;
+}
+
 .nav {
   display: none;
-  flex: 1 1 auto;
-  padding-right: 164px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 1054px;
+  max-width: calc(100% - 232px);
 }
 
 .navList {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 0 28px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 48px;
 }
 
@@ -62,7 +79,7 @@
   transition: color .15s ease;
 }
 
-.navLink:hover { color: var(--color-primary); }
+.navLink:hover { color: #009293; }
 
 .aboutUs { color: #000000; }
 
@@ -80,5 +97,51 @@
 @media (max-width: 1023px) {
   .inner {
     padding: 0 20px;
+  }
+  .logo {
+    left: 20px;
+  }
+  .menuToggle {
+    display: inline-flex;
+  }
+  .nav {
+    display: block;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: none;
+    transform: none;
+    background: #FFFFFF;
+    overflow-y: auto;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .2s ease, visibility .2s ease;
+  }
+  .nav.navOpen {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .navList {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0;
+    padding: 8px 20px 24px;
+  }
+  .navList li {
+    width: 100%;
+    border-bottom: 1px solid #EAECF0;
+  }
+  .navLink {
+    display: block;
+    width: 100%;
+    padding: 16px 4px;
+    font-size: 16px;
+    line-height: 22px;
   }
 }

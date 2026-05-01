@@ -1,4 +1,4 @@
-import logoImg from '../assets/zernyx-logo.jpeg'
+import logoImg from '../assets/zernyx-logo.svg'
 
 type LogoProps = {
   size?: number

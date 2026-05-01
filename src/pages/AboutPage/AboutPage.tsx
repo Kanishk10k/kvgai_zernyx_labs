@@ -1,34 +1,37 @@
-import { FiShield, FiUsers, FiLayers, FiTarget, FiLock, FiX } from 'react-icons/fi'
+import { FiX } from 'react-icons/fi'
 import styles from './AboutPage.module.css'
 import heroImage from '../../assets/life-at-zernyx.png'
 import operPhiloImg1 from '../../assets/oper-philosophy-1.png'
 import operPhiloImg2 from '../../assets/oper-philosophy-2.png'
 import operPhiloImg3 from '../../assets/oper-philosophy-3.png'
 import howWeOperateImage from '../../assets/how-we-operate.png'
+import howWeOperateIcon1 from '../../assets/howweoperate-icon-1.svg'
+import howWeOperateIcon2 from '../../assets/howweoperate-icon-2.svg'
+import howWeOperateIcon3 from '../../assets/howweoperate-icon-3.svg'
 
 const howWeOperateItems = [
   {
-    Icon: FiShield,
+    icon: howWeOperateIcon1,
     title: 'De-Risk Science with Structured Rigor',
     body: 'We apply disciplined experimental design and analytical validation to reduce uncertainty.',
   },
   {
-    Icon: FiUsers,
+    icon: howWeOperateIcon2,
     title: 'Bridge Research & Development',
     body: 'We operate at the interface of discovery, formulation, and development readiness.',
   },
   {
-    Icon: FiLayers,
+    icon: howWeOperateIcon3,
     title: 'Support the Full Development Lifecycle',
     body: 'From early feasibility to pilot-scale validation and translational support.',
   },
   {
-    Icon: FiTarget,
+    icon: howWeOperateIcon3,
     title: 'Operate as a Scientific Partner',
     body: 'We align milestones, timelines, and technical objectives with our partners.',
   },
   {
-    Icon: FiLock,
+    icon: howWeOperateIcon3,
     title: 'Maintain Confidentiality & Integrity',
     body: 'We handle sensitive data, formulations, and IP with enterprise-grade governance.',
   },
@@ -103,11 +106,9 @@ export default function AboutPage() {
           <h2 className={styles.howWeOperateTitle}>How We Operate</h2>
           <div className={styles.howWeOperateGrid}>
             <ul className={styles.howWeOperateList}>
-              {howWeOperateItems.map(({ Icon, title, body }) => (
+              {howWeOperateItems.map(({ icon, title, body }) => (
                 <li key={title} className={styles.howWeOperateItem}>
-                  <span className={styles.howWeOperateIconWrap} aria-hidden="true">
-                    <Icon className={styles.howWeOperateIcon} />
-                  </span>
+                  <img src={icon} alt="" className={styles.howWeOperateIcon} aria-hidden="true" />
                   <div className={styles.howWeOperateText}>
                     <h3 className={styles.howWeOperateItemTitle}>{title}</h3>
                     <p className={styles.howWeOperateItemBody}>{body}</p>

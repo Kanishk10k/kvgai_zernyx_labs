@@ -8,28 +8,27 @@ const linkColumns = [
     title: 'Platform',
     links: [
       { label: 'Home', to: '/' },
-      { label: 'Our Core Verticals', to: '/#core-verticals' },
-      { label: 'What Sets Us Apart', to: '/#integrated-approach' },
-      { label: 'FAQs', to: '/#mission' },
+      { label: 'Our Solutions', to: '/#our-solutions' },
+      { label: 'R&D Infrastructure', to: '/#rd-infrastructure' },
+      { label: 'Engagement Models', to: '/#engagement-models' },
     ],
   },
   {
     title: 'Company',
     links: [
       { label: 'About', to: '/about' },
-      { label: 'Get In Touch', to: '/#contact' },
-      { label: 'Terms of Use', to: '#' },
-      { label: 'Privacy Policy', to: '#' },
-      { label: 'IP Disclaimer', to: '#' },
+      { label: 'Get In Touch', to: '/#get-in-touch' },
+      { label: 'Terms of Use', to: '/terms' },
+      { label: 'Privacy Policy', to: '/privacy' },
+      { label: 'IP Disclaimer', to: '/ip-disclaimer' },
     ],
   },
   {
     title: 'Our Products',
     links: [
-      { label: 'Zernyx Labs', to: '#' },
-      { label: 'Zernyx Hub', to: '#' },
-      { label: 'TRL Calculator', to: '#' },
-      { label: 'i-Office', to: '#' },
+      { label: 'Zernyx Hub', to: '/#zernyx-hub' },
+      { label: 'TRL Calculator', to: '/#trl-calculator' },
+      { label: 'i-Office', to: '/#i-office' },
     ],
   },
 ]
@@ -47,7 +46,7 @@ export default function Footer() {
       <div className={styles.inner}>
         <div className={styles.grid}>
           <div className={styles.brand}>
-            <Logo size={28} className={styles.logo} />
+            <Logo size={30} className={styles.logo} />
             <p className={styles.tagline}>
               Connecting technology to the world though out innovative
               marketplace for licensing, innovation scouting, and IP

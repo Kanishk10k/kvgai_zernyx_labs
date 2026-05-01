@@ -1,19 +1,20 @@
-import { FiClipboard, FiCheckSquare, FiBarChart2 } from 'react-icons/fi'
 import styles from './CoreVerticals.module.css'
+import cardIcon1 from '../../assets/core-card-icon-1.svg'
+import cardIcon2 from '../../assets/core-card-icon-2.svg'
 
 const verticals = [
   {
-    Icon: FiClipboard,
+    icon: cardIcon1,
     title: 'Pharmaceutical, Cosmeceutical & Nutraceutical R&D',
     body: 'End-to-end experimental research across drug products, advanced cosmetic formulations, and functional nutraceuticals grounded in formulation science and translational development.',
   },
   {
-    Icon: FiCheckSquare,
+    icon: cardIcon2,
     title: 'Formulation & Technology Validation',
     body: 'Structured formulation and validation programs that transform concepts into stable, performance-tested, and development-ready prototypes.',
   },
   {
-    Icon: FiBarChart2,
+    icon: cardIcon2,
     title: 'Data-Driven Development Strategy',
     body: 'Decision-focused experimentation and analytics that assess feasibility, reduce uncertainty, and define clear pathways for development and scale.',
   },
@@ -32,11 +33,9 @@ export default function CoreVerticals() {
         </header>
 
         <div className={styles.grid}>
-          {verticals.map(({ Icon, title, body }) => (
+          {verticals.map(({ icon, title, body }) => (
             <article key={title} className={styles.card}>
-              <span className={styles.iconWrap} aria-hidden>
-                <Icon size={24} />
-              </span>
+              <img src={icon} alt="" className={styles.cardIcon} aria-hidden />
               <h3 className={styles.cardTitle}>{title}</h3>
               <p className={styles.cardBody}>{body}</p>
             </article>

@@ -1,5 +1,5 @@
 .section {
-  padding: clamp(56px, 8vw, 96px) var(--gutter);
+  padding: clamp(56px, 8vw, 96px) var(--gutter) 150px;
   background: var(--color-bg);
 }
 

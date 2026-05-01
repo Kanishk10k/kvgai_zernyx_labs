@@ -19,7 +19,7 @@
 .whoWeAre {
   width: 100%;
   background: #FFFFFF;
-  padding: clamp(64px, 9vw, 120px) var(--gutter, 24px) clamp(32px, 4vw, 48px);
+  padding: 80px var(--gutter, 24px) 0;
 }
 
 .whoWeAreInner {
@@ -66,7 +66,7 @@
 .visionMission {
   width: 100%;
   background: #FFFFFF;
-  padding: clamp(32px, 4vw, 48px) var(--gutter, 24px) clamp(16px, 2vw, 24px);
+  padding: 80px var(--gutter, 24px) 50px;
   display: flex;
   justify-content: center;
 }
@@ -127,7 +127,7 @@
 .operPhilo {
   width: 100%;
   background: #FFFFFF;
-  padding: clamp(24px, 3vw, 40px) var(--gutter, 24px) clamp(48px, 7vw, 96px);
+  padding: 10px var(--gutter, 24px) 200px;
 }
 
 .operPhiloInner {
@@ -226,7 +226,7 @@
 .howWeOperate {
   width: 100%;
   background: rgba(0, 146, 147, 0.04);
-  padding: clamp(20px, 2.5vw, 32px) var(--gutter, 24px) clamp(48px, 7vw, 96px);
+  padding: 5px var(--gutter, 24px) 60px;
 }
 
 .howWeOperateInner {
@@ -271,22 +271,12 @@
   gap: 12px;
 }
 
-.howWeOperateIconWrap {
+.howWeOperateIcon {
   flex: 0 0 56px;
   width: 56px;
   height: 56px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(0, 146, 147, 0.1);
-  border-radius: 14px;
-}
-
-.howWeOperateIcon {
-  width: 26px;
-  height: 26px;
-  color: #009293;
-  stroke-width: 2;
+  display: block;
+  object-fit: contain;
 }
 
 .howWeOperateText {
