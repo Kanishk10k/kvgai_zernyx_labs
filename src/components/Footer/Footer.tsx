@@ -9,7 +9,7 @@ const linkColumns = [
     links: [
       { label: 'Home', to: '/' },
       { label: 'Our Solutions', to: '/#our-solutions' },
-      { label: 'R&D Infrastructure', to: '/#rd-infrastructure' },
+      { label: 'R&D Infrastructure', to: '/rd-infrastructure' },
       { label: 'Engagement Models', to: '/#engagement-models' },
     ],
   },
@@ -17,7 +17,7 @@ const linkColumns = [
     title: 'Company',
     links: [
       { label: 'About', to: '/about' },
-      { label: 'Get In Touch', to: '/#get-in-touch' },
+      { label: 'Get In Touch', to: '/#contact' },
       { label: 'Terms of Use', to: '/terms' },
       { label: 'Privacy Policy', to: '/privacy' },
       { label: 'IP Disclaimer', to: '/ip-disclaimer' },
