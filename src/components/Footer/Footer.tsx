@@ -10,7 +10,7 @@ const linkColumns = [
       { label: 'Home', to: '/' },
       { label: 'Our Solutions', to: '/#our-solutions' },
       { label: 'R&D Infrastructure', to: '/rd-infrastructure' },
-      { label: 'Engagement Models', to: '/#engagement-models' },
+      { label: 'Engagement Models', to: '/engagement-models' },
     ],
   },
   {
