@@ -1,4 +1,5 @@
 import validationImages from '../../assets/validation-images.png'
+import builtValidation3 from '../../assets/built-validation-3.png'
 import styles from './BuiltForValidation.module.css'
 
 export default function BuiltForValidation() {
@@ -20,13 +21,28 @@ export default function BuiltForValidation() {
           </p>
         </header>
 
-        <div className={styles.imageRow}>
-          <img
-            src={validationImages}
-            alt="Zernyx Labs validation facilities: lab equipment, research scientist, and clinical handover"
-            className={styles.image}
-            loading="lazy"
+        <div
+          className={styles.imageRow}
+          style={{ '--validation-tray-src': `url(${validationImages})` } as React.CSSProperties}
+        >
+          <div
+            className={`${styles.tile} ${styles.tileBg}`}
+            style={{ backgroundPositionX: '0%' }}
+            aria-hidden="true"
           />
+          <div
+            className={`${styles.tile} ${styles.tileBg}`}
+            style={{ backgroundPositionX: '50%' }}
+            aria-hidden="true"
+          />
+          <div className={styles.tile}>
+            <img
+              src={builtValidation3}
+              alt="Quality control: technician inspecting blister-packaged tablets"
+              className={styles.tileImage}
+              loading="lazy"
+            />
+          </div>
         </div>
       </div>
     </section>

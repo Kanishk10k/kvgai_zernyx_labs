@@ -20,7 +20,7 @@
 @media (min-width: 1024px) {
   .grid {
     flex-direction: row;
-    gap: 24px;
+    gap: 48px;
     padding-bottom: 89px;
   }
 }
@@ -83,7 +83,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 16px;
+  gap: 24px;
   width: 168px;
   min-width: 0;
 }
@@ -97,8 +97,8 @@
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 20px;
+  line-height: 24px;
   color: #000000;
 }
 
@@ -109,7 +109,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 14px;
+  gap: 16px;
   width: 100%;
 }
 
@@ -117,8 +117,8 @@
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 16px;
+  line-height: 19px;
   color: rgba(0, 0, 0, 0.7);
   text-decoration: none;
   transition: color .15s ease;

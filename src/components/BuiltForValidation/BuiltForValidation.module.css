@@ -33,13 +33,29 @@
 }
 
 .imageRow {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 48px;
   width: 100%;
-  overflow: hidden;
-  border-radius: var(--radius-md);
 }
 
-.image {
+.tile {
+  flex: 1 1 0;
+  aspect-ratio: 480 / 299;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.tileBg {
+  background-image: var(--validation-tray-src);
+  background-size: 300% 100%;
+  background-repeat: no-repeat;
+}
+
+.tileImage {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
+  object-fit: cover;
 }

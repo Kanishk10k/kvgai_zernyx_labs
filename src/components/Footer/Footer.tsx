@@ -48,9 +48,8 @@ export default function Footer() {
           <div className={styles.brand}>
             <Logo size={30} className={styles.logo} />
             <p className={styles.tagline}>
-              Connecting technology to the world though out innovative
-              marketplace for licensing, innovation scouting, and IP
-              commercialization.
+              Advancing life-science technologies through structured validation,
+              formulation science, and development-ready execution.
             </p>
             <ul className={styles.socials}>
               {socials.map(({ Icon, label, href }) => (
@@ -85,7 +84,7 @@ export default function Footer() {
 
         <div className={styles.divider} />
         <p className={styles.copyright}>
-          &copy; 2025 ZERNYX. All rights reserved.
+          &copy; 2026 ZERNYX INNOVATIONS PRIVATE LIMITED. All rights reserved.
         </p>
       </div>
     </footer>
