@@ -1,10 +1,10 @@
 import { FiX } from 'react-icons/fi'
 import styles from './AboutPage.module.css'
-import heroImage from '../../assets/life-at-zernyx.png'
-import operPhiloImg1 from '../../assets/oper-philosophy-1.png'
-import operPhiloImg2 from '../../assets/oper-philosophy-2.png'
-import operPhiloImg3 from '../../assets/oper-philosophy-3.png'
-import howWeOperateImage from '../../assets/how-we-operate.png'
+import heroImage from '../../assets/life-at-zernyx.svg'
+import operPhiloImg1 from '../../assets/phil-cont-1.svg'
+import operPhiloImg2 from '../../assets/phil-cont-2.svg'
+import operPhiloImg3 from '../../assets/phil-cont-3.svg'
+import howWeOperateImage from '../../assets/oper-cont.svg'
 import howWeOperateIcon1 from '../../assets/howweoperate-icon-1.svg'
 import howWeOperateIcon2 from '../../assets/howweoperate-icon-2.svg'
 import howWeOperateIcon3 from '../../assets/howweoperate-icon-3.svg'
@@ -55,9 +55,7 @@ export default function AboutPage() {
         <div className={styles.whoWeAreInner}>
           <h2 className={styles.whoWeAreTitle}>Who We Are</h2>
           <p className={styles.whoWeAreBody}>
-            Zernyx Labs was founded to address a persistent gap in life-science innovation—where promising research often fails to translate into validated, development-ready outcomes.
-            <br />
-            We integrate formulation science, analytical rigor, and structured experimentation to move technologies beyond uncertainty and toward confident execution.
+            Zernyx Labs was founded to address a persistent gap in life-science innovation where promising research often fails to translate into validated, deployment-ready outcomes. We integrate formulation science, analytical rigor, and structured experimentation to move technologies beyond uncertainty and toward confident execution.
           </p>
         </div>
       </section>
@@ -66,13 +64,14 @@ export default function AboutPage() {
         <div className={styles.visionMissionCard}>
           <div className={styles.vmBlock}>
             <h3 className={styles.vmTitle}>Our Vision</h3>
-            <p className={styles.vmBody}>
-              To be a globally trusted life-sciences R&amp;D partner enabling reliable, validation-driven innovation across pharmaceutical, cosmeceutical, and nutraceutical domains.
+            <p className={`${styles.vmBody} ${styles.vmBodyVision}`}>
+              To be a globally trusted life-sciences R&amp;D partner enabling reliable, validation-driven<br />
+              innovation across advanced pharmaceutical, cosmeceutical, and nutraceutical domains.
             </p>
           </div>
           <div className={styles.vmBlock}>
             <h3 className={styles.vmTitle}>Our Mission</h3>
-            <p className={styles.vmBody}>
+            <p className={`${styles.vmBody} ${styles.vmBodyMission}`}>
               To systematically de-risk life-science technologies through rigorous experimentation, reproducible data, and execution-focused scientific collaboration.
             </p>
           </div>
@@ -83,7 +82,9 @@ export default function AboutPage() {
         <div className={styles.operPhiloInner}>
           <h2 className={styles.operPhiloTitle}>Our Operating Philosophy</h2>
           <p className={styles.operPhiloBody}>
-            Zernyx Labs is built for execution-oriented science—where experimental rigor, data integrity, and translational intent intersect. We engage selectively, operate with clarity, and focus on outcomes that are technically sound, reproducible, and development-ready.
+            Zernyx Labs is built for execution-oriented science where experimental rigor, data integrity, and translational intent intersect.
+            <br />
+            We engage selectively, operate with clarity, and focus on outcomes that are technically sound, reproducible, and{' '}development&#8209;ready.
           </p>
           <div className={styles.operPhiloGrid}>
             <div className={styles.operPhiloLeftCol}>

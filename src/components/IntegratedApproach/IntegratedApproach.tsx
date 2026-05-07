@@ -1,19 +1,20 @@
-import { FiCheckCircle, FiBox, FiTrendingUp } from 'react-icons/fi'
+import ourIntCont1 from '../../assets/our-int-cont-1.svg'
+import ourIntCont2 from '../../assets/our-int-cont-2.svg'
 import styles from './IntegratedApproach.module.css'
 
 const pillars = [
   {
-    Icon: FiCheckCircle,
+    icon: ourIntCont1,
     title: 'Scientific Validation',
     body: 'We generate high-quality, reproducible data through structured experimentation establishing technical feasibility and reducing early-stage uncertainty.',
   },
   {
-    Icon: FiBox,
+    icon: ourIntCont2,
     title: 'Formulation & Translational Development',
     body: 'We design and optimize formulations that are stable, scalable, and aligned with real-world application and pilot readiness.',
   },
   {
-    Icon: FiTrendingUp,
+    icon: ourIntCont2,
     title: 'Decision-Focused Data & Readiness',
     body: 'We translate experimental outcomes into clear insights on performance, scalability, and next-stage development pathways.',
   },
@@ -33,10 +34,10 @@ export default function IntegratedApproach() {
         </header>
 
         <div className={styles.grid}>
-          {pillars.map(({ Icon, title, body }) => (
+          {pillars.map(({ icon, title, body }) => (
             <article key={title} className={styles.card}>
               <span className={styles.iconWrap} aria-hidden>
-                <Icon size={26} />
+                <img src={icon} alt="" className={styles.iconImg} />
               </span>
               <h3 className={styles.cardTitle}>{title}</h3>
               <p className={styles.cardBody}>{body}</p>

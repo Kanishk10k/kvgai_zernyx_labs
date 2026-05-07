@@ -1,6 +1,13 @@
-import validationImages from '../../assets/validation-images.png'
-import builtValidation3 from '../../assets/built-validation-3.png'
+import builtValidation1 from '../../assets/built-validation-1.svg'
+import builtValidation2 from '../../assets/built-validation-2.svg'
+import builtValidation3 from '../../assets/built-validation-3.svg'
 import styles from './BuiltForValidation.module.css'
+
+const trayImages = [
+  { src: builtValidation1, alt: 'Lab equipment and instrumentation', ratio: '446 / 338', grow: 446 },
+  { src: builtValidation2, alt: 'Research scientist at work', ratio: '575 / 339', grow: 575 },
+  { src: builtValidation3, alt: 'Quality control of finished product', ratio: '403 / 338', grow: 403 },
+]
 
 export default function BuiltForValidation() {
   return (
@@ -21,28 +28,17 @@ export default function BuiltForValidation() {
           </p>
         </header>
 
-        <div
-          className={styles.imageRow}
-          style={{ '--validation-tray-src': `url(${validationImages})` } as React.CSSProperties}
-        >
-          <div
-            className={`${styles.tile} ${styles.tileBg}`}
-            style={{ backgroundPositionX: '0%' }}
-            aria-hidden="true"
-          />
-          <div
-            className={`${styles.tile} ${styles.tileBg}`}
-            style={{ backgroundPositionX: '50%' }}
-            aria-hidden="true"
-          />
-          <div className={styles.tile}>
+        <div className={styles.imageRow}>
+          {trayImages.map(({ src, alt, ratio, grow }) => (
             <img
-              src={builtValidation3}
-              alt="Quality control: technician inspecting blister-packaged tablets"
+              key={src}
+              src={src}
+              alt={alt}
               className={styles.tileImage}
               loading="lazy"
+              style={{ aspectRatio: ratio, flexGrow: grow }}
             />
-          </div>
+          ))}
         </div>
       </div>
     </section>

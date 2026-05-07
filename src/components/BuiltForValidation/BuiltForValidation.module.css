@@ -36,26 +36,17 @@
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  gap: 48px;
-  width: 100%;
-}
-
-.tile {
-  flex: 1 1 0;
-  aspect-ratio: 480 / 299;
-  border-radius: var(--radius-md);
-  overflow: hidden;
-}
-
-.tileBg {
-  background-image: var(--validation-tray-src);
-  background-size: 300% 100%;
-  background-repeat: no-repeat;
+  flex-wrap: nowrap;
+  gap: 12px;
+  width: 100vw;
+  margin-inline: calc(50% - 50vw);
 }
 
 .tileImage {
-  width: 100%;
-  height: 100%;
+  flex-basis: 0;
+  flex-shrink: 1;
+  min-width: 0;
+  width: auto;
+  height: auto;
   display: block;
-  object-fit: cover;
 }
