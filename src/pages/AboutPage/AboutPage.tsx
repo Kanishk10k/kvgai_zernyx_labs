@@ -1,6 +1,6 @@
 import { FiX } from 'react-icons/fi'
 import styles from './AboutPage.module.css'
-import heroImage from '../../assets/life-at-zernyx.svg'
+import heroImage from '../../assets/about-hero.svg'
 import operPhiloImg1 from '../../assets/phil-cont-1.svg'
 import operPhiloImg2 from '../../assets/phil-cont-2.svg'
 import operPhiloImg3 from '../../assets/phil-cont-3.svg'
