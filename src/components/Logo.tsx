@@ -1,4 +1,4 @@
-import logoImg from '../assets/zernyx-logo.svg'
+import logoImg from '../assets/zernyx-logo.png'
 
 type LogoProps = {
   size?: number
@@ -11,8 +11,9 @@ export default function Logo({ size = 30, className }: LogoProps) {
       <img
         src={logoImg}
         alt="Zernyx"
+        width={116}
         height={size}
-        style={{ height: size, width: 'auto', display: 'block' }}
+        style={{ width: 116, height: size, display: 'block' }}
       />
     </a>
   )

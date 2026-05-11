@@ -13,11 +13,11 @@ type NavItem = {
 const navItems: NavItem[] = [
   { label: 'Home', to: '/' },
   { label: 'About Us', to: '/about', variant: 'aboutUs' },
-  { label: 'Our Solutions', to: '/#our-solutions' },
+  { label: 'Our Solutions', to: '/our-solutions' },
   { label: 'R&D Infrastructure', to: '/rd-infrastructure' },
   { label: 'Engagement Models', to: '/engagement-models' },
   { label: 'Our Products', to: '/#our-products' },
-  { label: 'Get In Touch', to: '/#get-in-touch' },
+  { label: 'Get In Touch', to: '/#contact' },
 ]
 
 export default function Header() {

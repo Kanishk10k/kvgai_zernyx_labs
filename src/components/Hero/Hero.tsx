@@ -1,4 +1,3 @@
-import lifeAtZernyxImage from '../../assets/life-at-zernyx.svg'
 import styles from './Hero.module.css'
 
 const bullets = [
@@ -33,10 +32,15 @@ export default function Hero() {
         </div>
 
         <div className={styles.media}>
-          <img
-            src={lifeAtZernyxImage}
-            alt="Scientists working in a Zernyx Labs research facility"
-            className={styles.image}
+          <video
+            className={styles.video}
+            src="/zernyx-home.mp4"
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="auto"
+            aria-label="Zernyx Labs research footage"
           />
         </div>
       </div>

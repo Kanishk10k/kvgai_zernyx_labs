@@ -1,6 +1,6 @@
 import { FiCheckCircle } from 'react-icons/fi'
 import styles from './EngagementModelsPage.module.css'
-import lifeAtZernyxImage from '../../assets/life-at-zernyx.png'
+import lifeAtZernyxImage from '../../assets/eng-hero.svg'
 import engCardIcon1 from '../../assets/eng-card-icon1.svg'
 import engCardIcon2 from '../../assets/eng-card-icon2.svg'
 import engCardIcon3 from '../../assets/eng-card-icon3.svg'
@@ -9,7 +9,13 @@ import engCardIcon4 from '../../assets/eng-card-icon4.svg'
 const howWeEngageSteps = [
   {
     title: 'Discovery Call',
-    body: 'Initial consultation to understand your objectives and challenges',
+    body: (
+      <>
+        Initial consultation to understand your
+        <br />
+        objectives and challenges
+      </>
+    ),
   },
   {
     title: 'Proposal & Scoping',
@@ -17,11 +23,23 @@ const howWeEngageSteps = [
   },
   {
     title: 'Execution',
-    body: 'Collaborative project delivery with regular updates',
+    body: (
+      <>
+        Collaborative project delivery with
+        <br />
+        regular updates
+      </>
+    ),
   },
   {
     title: 'Delivery & Support',
-    body: 'Final reporting with ongoing support as needed',
+    body: (
+      <>
+        Final reporting with ongoing support as
+        <br />
+        needed
+      </>
+    ),
   },
 ]
 
@@ -120,7 +138,12 @@ export default function EngagementModelsPage() {
                 />
                 <div className={styles.cardTitleRow}>
                   <span className={styles.cardBadge} aria-hidden>{idx + 1}</span>
-                  <h3 className={styles.cardTitle}>{title}</h3>
+                  <h3
+                    className={styles.cardTitle}
+                    style={idx === 1 ? { whiteSpace: 'nowrap' } : undefined}
+                  >
+                    {title}
+                  </h3>
                 </div>
                 <p className={styles.cardBody}>{body}</p>
 

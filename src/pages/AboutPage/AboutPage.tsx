@@ -13,12 +13,22 @@ const howWeOperateItems = [
   {
     icon: howWeOperateIcon1,
     title: 'De-Risk Science with Structured Rigor',
-    body: 'We apply disciplined experimental design and analytical validation to reduce uncertainty.',
+    body: (
+      <>
+        We apply disciplined experimental design and<br />
+        analytical validation to reduce uncertainty.
+      </>
+    ),
   },
   {
     icon: howWeOperateIcon2,
     title: 'Bridge Research & Development',
-    body: 'We operate at the interface of discovery, formulation, and development readiness.',
+    body: (
+      <>
+        We operate at the interface of discovery,<br />
+        formulation, and development readiness.
+      </>
+    ),
   },
   {
     icon: howWeOperateIcon3,
@@ -28,12 +38,22 @@ const howWeOperateItems = [
   {
     icon: howWeOperateIcon3,
     title: 'Operate as a Scientific Partner',
-    body: 'We align milestones, timelines, and technical objectives with our partners.',
+    body: (
+      <>
+        We align milestones, timelines, and technical<br />
+        objectives with our partners.
+      </>
+    ),
   },
   {
     icon: howWeOperateIcon3,
     title: 'Maintain Confidentiality & Integrity',
-    body: 'We handle sensitive data, formulations, and IP with enterprise-grade governance.',
+    body: (
+      <>
+        We handle sensitive data, formulations, and IP<br />
+        with enterprise-grade governance.
+      </>
+    ),
   },
 ]
 

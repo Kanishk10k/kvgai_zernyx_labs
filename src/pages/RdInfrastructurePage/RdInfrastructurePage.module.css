@@ -18,7 +18,7 @@
   display: grid;
   grid-template-columns: 464px 1fr;
   align-items: center;
-  gap: 114.5px;
+  gap: 60px;
 }
 
 .purposeBuiltText {
@@ -36,7 +36,7 @@
 }
 
 .purposeBuiltTitle {
-  margin: 0;
+  margin: 0 0 24px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -59,14 +59,17 @@
 
 .purposeBuiltImageWrap {
   width: 100%;
-  max-width: 704px;
+  max-width: 900px;
+  aspect-ratio: 664 / 400;
   justify-self: end;
+  margin-top: 40px;
 }
 
 .purposeBuiltImage {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
+  object-fit: contain;
 }
 
 @media (max-width: 1199px) {
@@ -408,8 +411,12 @@
 
 .heroBannerImage {
   width: 100%;
+  max-width: 1243px;
+  aspect-ratio: 1243 / 500;
   height: auto;
   display: block;
+  align-self: stretch;
+  object-fit: contain;
 }
 
 @media (max-width: 1100px) {

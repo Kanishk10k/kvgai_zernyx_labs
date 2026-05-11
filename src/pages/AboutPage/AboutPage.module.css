@@ -137,7 +137,7 @@
 .operPhilo {
   width: 100%;
   background: #FFFFFF;
-  padding: 10px var(--gutter, 24px) 200px;
+  padding: 80px var(--gutter, 24px) 200px;
 }
 
 .operPhiloInner {
@@ -176,13 +176,14 @@
   margin-top: 80px;
   display: grid;
   grid-template-columns: 578fr 536fr;
-  gap: 47px;
+  column-gap: 20px;
+  row-gap: 47px;
 }
 
 .operPhiloLeftCol {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 20px;
 }
 
 .operPhiloCard {
@@ -195,10 +196,26 @@
   aspect-ratio: auto;
 }
 
+.operPhiloCardRight {
+  height: 100%;
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  overflow: visible;
+}
+
 .operPhiloImage {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.operPhiloCardRight .operPhiloImage {
+  height: 98%;
+  width: auto;
+  max-width: none;
+  object-fit: contain;
 }
 
 @media (max-width: 1023px) {
@@ -209,6 +226,14 @@
   }
   .operPhiloLeftCol {
     gap: 32px;
+  }
+  .operPhiloCardRight {
+    height: auto;
+    display: block;
+  }
+  .operPhiloCardRight .operPhiloImage {
+    height: auto;
+    object-fit: initial;
   }
 }
 
@@ -251,7 +276,7 @@
 .howWeOperateGrid {
   width: 100%;
   display: grid;
-  grid-template-columns: 380px 1fr;
+  grid-template-columns: max-content 1fr;
   gap: 80px;
   align-items: center;
 }
@@ -283,6 +308,7 @@
   display: flex;
   flex-direction: column;
   gap: 0;
+  min-width: 0;
 }
 
 .howWeOperateItemTitle {
@@ -293,10 +319,12 @@
   font-size: 18px;
   line-height: 27px;
   color: #101828;
+  white-space: nowrap;
 }
 
 .howWeOperateItemBody {
   margin: 4px 0 0;
+  max-width: 380px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -307,12 +335,15 @@
 
 .howWeOperateImageWrap {
   width: 100%;
+  overflow: visible;
 }
 
 .howWeOperateImage {
   display: block;
   width: 100%;
   height: auto;
+  transform-origin: top center;
+  transform: scale(1.1);
 }
 
 @media (max-width: 1023px) {

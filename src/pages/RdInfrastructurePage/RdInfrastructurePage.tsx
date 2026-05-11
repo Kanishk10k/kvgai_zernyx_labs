@@ -1,21 +1,21 @@
 import { FiCheckCircle } from 'react-icons/fi'
 import styles from './RdInfrastructurePage.module.css'
 import purposeBuiltIcon from '../../assets/rd-purpose-built-icon.svg'
-import purposeBuiltImage from '../../assets/rd-purpose-built-image.svg'
+import purposeBuiltImage from '../../assets/rd-purpose-hero.svg'
 import coreCapabIcon1 from '../../assets/rd-core-capab-icon1.svg'
 import coreCapabIcon2 from '../../assets/rd-core-capab-icon2.svg'
 import coreCapabIcon3 from '../../assets/rd-core-capab-icon3.svg'
 import designPhilIcon1 from '../../assets/rd-design-phil-icon1.svg'
 import designPhilIcon2 from '../../assets/rd-design-phil-icon2.svg'
 import designPhilIcon3 from '../../assets/rd-design-phil-icon3.svg'
-import heroImage from '../../assets/rd-hero-image.svg'
+import heroImage from '../../assets/rd-show-banner.svg'
 
 const coreCapabilities = [
   {
     icon: coreCapabIcon1,
     title: 'Formulation & Development Laboratories',
     items: [
-      'Pharmaceutical and nutraceutical formulation',
+      'Pharmaceutical, nutraceutical and cosmetic formulation',
       'Advanced topical and oral delivery systems',
       'Prototype-scale batch preparation',
     ],
@@ -94,11 +94,11 @@ export default function RdInfrastructurePage() {
             </h2>
             <p className={styles.purposeBuiltBody}>
               Zernyx Labs operates multidisciplinary laboratory and pilot-scale
-              infrastructure designed to support early- to mid-stage life-science
-              validation, formulation development, and translational research.
+              infrastructure designed to support early-to mid-stage life-science
+              product validation, formulation development, and translational research.
             </p>
             <p className={styles.purposeBuiltBody}>
-              Our facilities enable speed, scientific rigor, and scalability —
+              Our facilities enable speed, scientific rigor, and scalability
               supporting confident progression from concept to proof and pilot.
             </p>
           </div>

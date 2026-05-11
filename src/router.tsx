@@ -4,6 +4,7 @@ import HomePage from './pages/HomePage'
 import AboutPage from './pages/AboutPage/AboutPage'
 import RdInfrastructurePage from './pages/RdInfrastructurePage/RdInfrastructurePage'
 import EngagementModelsPage from './pages/EngagementModelsPage/EngagementModelsPage'
+import OurSolutionsPage from './pages/OurSolutionsPage/OurSolutionsPage'
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,7 @@ const router = createBrowserRouter([
       { path: 'about', element: <AboutPage /> },
       { path: 'rd-infrastructure', element: <RdInfrastructurePage /> },
       { path: 'engagement-models', element: <EngagementModelsPage /> },
+      { path: 'our-solutions', element: <OurSolutionsPage /> },
     ],
   },
 ])
