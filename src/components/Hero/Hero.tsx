@@ -32,15 +32,11 @@ export default function Hero() {
         </div>
 
         <div className={styles.media}>
-          <video
-            className={styles.video}
-            src="/zernyx-home.mp4"
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="auto"
-            aria-label="Zernyx Labs research footage"
+          <img
+            className={styles.image}
+            src="/home_hero.svg"
+            alt=""
+            aria-hidden
           />
         </div>
       </div>

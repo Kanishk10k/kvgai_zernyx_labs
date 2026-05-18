@@ -1,6 +1,7 @@
 import styles from './CoreVerticals.module.css'
 import cardIcon1 from '../../assets/core-card-icon-1.svg'
 import cardIcon2 from '../../assets/core-card-icon-2.svg'
+import cardIcon3 from '../../assets/core-card-icon-3.svg'
 
 const verticals = [
   {
@@ -14,7 +15,7 @@ const verticals = [
     body: 'Structured formulation and validation programs that transform concepts into stable, performance-tested, and development-ready prototypes.',
   },
   {
-    icon: cardIcon2,
+    icon: cardIcon3,
     title: 'Data-Driven Development Strategy',
     body: 'Decision-focused experimentation and analytics that assess feasibility, reduce uncertainty, and define clear pathways for development and scale.',
   },

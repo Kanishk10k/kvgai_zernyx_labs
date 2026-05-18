@@ -35,9 +35,9 @@
 .imageRow {
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
+  align-items: stretch;
   flex-wrap: nowrap;
-  gap: 12px;
+  gap: 4px;
   width: 100vw;
   margin-inline: calc(50% - 50vw);
 }
@@ -46,7 +46,7 @@
   flex-basis: 0;
   flex-shrink: 1;
   min-width: 0;
-  width: auto;
+  width: 100%;
   height: auto;
   display: block;
 }

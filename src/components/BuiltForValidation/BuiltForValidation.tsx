@@ -4,9 +4,9 @@ import builtValidation3 from '../../assets/built-validation-3.svg'
 import styles from './BuiltForValidation.module.css'
 
 const trayImages = [
-  { src: builtValidation1, alt: 'Lab equipment and instrumentation', ratio: '446 / 338', grow: 446 },
-  { src: builtValidation2, alt: 'Research scientist at work', ratio: '575 / 339', grow: 575 },
-  { src: builtValidation3, alt: 'Quality control of finished product', ratio: '403 / 338', grow: 403 },
+  { src: builtValidation1, alt: 'Lab equipment and instrumentation', ratio: '403 / 338', grow: 403 },
+  { src: builtValidation2, alt: 'Research scientist at work', ratio: '618 / 338', grow: 618 },
+  { src: builtValidation3, alt: 'Quality control of finished product', ratio: '403 / 339', grow: 403 },
 ]
 
 export default function BuiltForValidation() {
