@@ -605,36 +605,38 @@
 .pipelineCard {
   box-sizing: border-box;
   min-height: 420px;
-  padding: 24px 16px;
-  background: linear-gradient(135.55deg, rgba(0, 146, 147, 0) 0%, rgba(255, 255, 255, 0.3) 104.79%);
-  border-radius: 12px;
-  border: 1px solid rgba(0, 146, 147, 0.12);
+  padding: 28px 28px;
+  background: radial-gradient(circle at top left, rgba(250, 255, 255, 0.9) 0%, rgba(0, 146, 147, 0) 40%), linear-gradient(135.55deg, rgba(0, 146, 147, 0.10) 0%, rgba(250, 255, 255, 0.9) 154.79%);
+  border-radius: 16px;
   display: flex;
   flex-direction: column;
   gap: 16px;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.pipelineCard:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-card);
 }
 
 .pipelineCardTitle {
-  margin: 0;
+  margin: 0 0 12px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 27px;
-  color: #667085;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.4;
+  color: #101828;
 }
 
 .pipelineCardBody {
+  margin: 0;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 27px;
+  font-size: 13px;
+  line-height: 1.55;
   color: #667085;
-}
-
-.pipelineCardBody p {
-  margin: 0 0 4px 0;
 }
 
 .pipelineCardBody ul {
@@ -643,18 +645,21 @@
   padding-left: 18px;
 }
 
-.pipelineCardBody li {
-  margin-bottom: 4px;
+.pipelineCardBody ul + :global(.agSub) {
+  margin-top: 14px;
 }
 
-.pipelineCardBody strong {
-  font-weight: 600;
-  color: #101828;
+.pipelineCardBody li {
+  margin-bottom: 6px;
+}
+
+.pipelineCardBody li::marker {
+  color: #009293;
 }
 
 .pipelineCardBody :global(.agSub) {
-  margin-top: 12px;
-  font-weight: 500;
+  margin: 0 0 6px;
+  font-weight: 600;
   color: #101828;
 }
 

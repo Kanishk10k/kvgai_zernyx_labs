@@ -46,20 +46,20 @@ const pipelineColumns: PipelineColumn[] = [
   {
     heading: 'Advanced Biotherapeutics',
     body: (
-      <>
-        <p>mRNA Therapeutics</p>
-        <p>Peptide and Protein Delivery</p>
-        <p>CRISPR-Cas Therapeutics</p>
-      </>
+      <ul>
+        <li>mRNA Therapeutics</li>
+        <li>Peptide and Protein Delivery</li>
+        <li>CRISPR-Cas Therapeutics</li>
+      </ul>
     ),
   },
   {
     heading: 'Genetic & Molecular Delivery Systems',
     body: (
-      <>
-        <p>Cationic Polymer and Lipids for gene delivery</p>
-        <p>Lipopolymeric Nanoplexes for mRNA, pDNA, CRISPR-Cas9 Protein</p>
-      </>
+      <ul>
+        <li>Cationic Polymer and Lipids for gene delivery</li>
+        <li>Lipopolymeric Nanoplexes for mRNA, pDNA, CRISPR-Cas9 Protein</li>
+      </ul>
     ),
   },
   {
@@ -84,14 +84,14 @@ const pipelineColumns: PipelineColumn[] = [
     heading: 'Functional Oral Delivery',
     body: (
       <>
-        <p>
-          <strong>Caffeinated Buccal Spray</strong>
-        </p>
-        <p>Pilot stage &amp; validation (Mistify.co.in)</p>
-        <p>
-          <strong>Better Sweet</strong>
-        </p>
-        <p>All natural sweetner with zero glycemic impact</p>
+        <p className="agSub">Caffeinated Buccal Spray</p>
+        <ul>
+          <li>Pilot stage &amp; validation (Mistify.co.in)</li>
+        </ul>
+        <p className="agSub">Better Sweet</p>
+        <ul>
+          <li>All natural sweetner with zero glycemic impact</li>
+        </ul>
       </>
     ),
   },
@@ -99,13 +99,13 @@ const pipelineColumns: PipelineColumn[] = [
     heading: 'Commercial Products (> 20 products)',
     body: (
       <>
-        <p>
-          <strong>Dermatology &amp; Skincare</strong>
-        </p>
-        <p>Copper Glow Moisturizer (Copper Tripeptide-1 &amp; Alpha Arbutin)</p>
-        <p>Deep Hydration Gel (HA5 Matrix - Hyaluronic Acid 2%)</p>
-        <p>Peptide Brightening Cream (Niacinamide 2% &amp; Nonapeptide-1)</p>
-        <p>Brand: in.skin (Multiple SKUs at inskin.in)</p>
+        <p className="agSub">Dermatology &amp; Skincare</p>
+        <ul>
+          <li>Copper Glow Moisturizer (Copper Tripeptide-1 &amp; Alpha Arbutin)</li>
+          <li>Deep Hydration Gel (HA5 Matrix - Hyaluronic Acid 2%)</li>
+          <li>Peptide Brightening Cream (Niacinamide 2% &amp; Nonapeptide-1)</li>
+          <li>Brand: in.skin (Multiple SKUs at inskin.in)</li>
+        </ul>
       </>
     ),
   },
@@ -372,7 +372,8 @@ export default function OurSolutionsPage() {
               Zernyx Product &amp; Innovation Pipeline
             </h2>
             <p className={styles.pipelineSubtitle}>
-              A comprehensive portfolio spanning commercial products, near-market innovations, active R&amp;D programs, platform technologies, and early stage research.
+              A comprehensive portfolio spanning commercial products, near-market innovations, active R&amp;D programs,<br />
+              platform technologies, and early stage research.
             </p>
           </header>
 
