@@ -55,8 +55,8 @@
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 32px;
+  font-size: clamp(15px, 1.6vw, 18px);
+  line-height: 1.7;
   color: #667085;
 }
 
@@ -65,10 +65,9 @@
   padding: 0;
   list-style: none;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 22px;
-  white-space: nowrap;
+  gap: 14px 22px;
 }
 
 .bullet {
@@ -78,8 +77,8 @@
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 28px;
+  font-size: clamp(14px, 1.5vw, 18px);
+  line-height: 1.5;
   color: #667085;
 }
 
@@ -104,6 +103,3 @@
   height: auto;
 }
 
-@media (max-width: 640px) {
-  .bullet { font-size: 15px; }
-}

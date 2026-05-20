@@ -18,7 +18,7 @@
 .whoWeAre {
   width: 100%;
   background: #FFFFFF;
-  padding: 80px var(--gutter, 24px) 0;
+  padding: clamp(48px, 7vw, 80px) var(--gutter, 24px) 0;
 }
 
 .whoWeAreInner {
@@ -36,8 +36,8 @@
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 36px;
-  line-height: 72px;
+  font-size: clamp(26px, 3.4vw, 36px);
+  line-height: 1.3;
   color: #101828;
 }
 
@@ -47,27 +47,16 @@
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 32px;
+  font-size: clamp(15px, 1.6vw, 18px);
+  line-height: 1.7;
   color: #667085;
   text-align: center;
-}
-
-@media (max-width: 768px) {
-  .whoWeAreTitle {
-    font-size: 28px;
-    line-height: 40px;
-  }
-  .whoWeAreBody {
-    font-size: 18px;
-    line-height: 28px;
-  }
 }
 
 .visionMission {
   width: 100%;
   background: #FFFFFF;
-  padding: 80px var(--gutter, 24px) 50px;
+  padding: clamp(48px, 7vw, 80px) var(--gutter, 24px) clamp(32px, 4vw, 50px);
   display: flex;
   justify-content: center;
 }
@@ -77,11 +66,11 @@
   max-width: 902px;
   background: rgba(0, 146, 147, 0.04);
   box-shadow: -2px 2px 7px 1px rgba(0, 146, 147, 0.2);
-  border-radius: 48px;
-  padding: 24px 32px 34px;
+  border-radius: clamp(32px, 4vw, 48px);
+  padding: clamp(24px, 3vw, 32px) clamp(20px, 3vw, 32px) clamp(28px, 3.5vw, 34px);
   display: flex;
   flex-direction: column;
-  gap: 46px;
+  gap: clamp(32px, 4vw, 46px);
 }
 
 .vmBlock {
@@ -97,8 +86,8 @@
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
-  line-height: 29px;
+  font-size: clamp(20px, 2.2vw, 24px);
+  line-height: 1.25;
   color: #009293;
 }
 
@@ -108,8 +97,8 @@
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: clamp(15px, 1.6vw, 18px);
+  line-height: 1.5;
   text-align: center;
   color: #667085;
 }
@@ -122,22 +111,10 @@
   max-width: 100%;
 }
 
-@media (max-width: 768px) {
-  .visionMissionCard {
-    border-radius: 32px;
-    padding: 28px 20px 32px;
-    gap: 32px;
-  }
-  .vmBody {
-    font-size: 16px;
-    line-height: 24px;
-  }
-}
-
 .operPhilo {
   width: 100%;
   background: #FFFFFF;
-  padding: 80px var(--gutter, 24px) 200px;
+  padding: clamp(48px, 7vw, 80px) var(--gutter, 24px) clamp(80px, 14vw, 200px);
 }
 
 .operPhiloInner {
@@ -153,8 +130,8 @@
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 36px;
-  line-height: 72px;
+  font-size: clamp(26px, 3.4vw, 36px);
+  line-height: 1.3;
   color: #101828;
   text-align: center;
 }
@@ -165,15 +142,15 @@
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 32px;
+  font-size: clamp(15px, 1.6vw, 18px);
+  line-height: 1.7;
   color: #667085;
   text-align: center;
 }
 
 .operPhiloGrid {
   width: 100%;
-  margin-top: 80px;
+  margin-top: clamp(40px, 6vw, 80px);
   display: grid;
   grid-template-columns: 578fr 536fr;
   column-gap: 12px;
@@ -222,7 +199,6 @@
   .operPhiloGrid {
     grid-template-columns: 1fr;
     gap: 32px;
-    margin-top: 48px;
   }
   .operPhiloLeftCol {
     gap: 32px;
@@ -237,21 +213,10 @@
   }
 }
 
-@media (max-width: 768px) {
-  .operPhiloTitle {
-    font-size: 28px;
-    line-height: 40px;
-  }
-  .operPhiloBody {
-    font-size: 16px;
-    line-height: 26px;
-  }
-}
-
 .howWeOperate {
   width: 100%;
   background: rgba(0, 146, 147, 0.04);
-  padding: 5px var(--gutter, 24px) 60px;
+  padding: 5px var(--gutter, 24px) clamp(40px, 6vw, 60px);
 }
 
 .howWeOperateInner {
@@ -263,12 +228,12 @@
 }
 
 .howWeOperateTitle {
-  margin: 0 0 64px;
+  margin: 0 0 clamp(40px, 6vw, 64px);
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 36px;
-  line-height: 72px;
+  font-size: clamp(26px, 3.4vw, 36px);
+  line-height: 1.3;
   color: #101828;
   text-align: center;
 }
@@ -277,7 +242,7 @@
   width: 100%;
   display: grid;
   grid-template-columns: max-content 1fr;
-  gap: 80px;
+  gap: clamp(40px, 6vw, 80px);
   align-items: stretch;
 }
 
@@ -316,8 +281,8 @@
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 18px;
-  line-height: 27px;
+  font-size: clamp(16px, 1.7vw, 18px);
+  line-height: 1.45;
   color: #101828;
   white-space: nowrap;
 }
@@ -328,8 +293,8 @@
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 22px;
+  font-size: clamp(13px, 1.3vw, 14px);
+  line-height: 1.55;
   color: #667085;
 }
 
@@ -360,14 +325,18 @@
   .howWeOperateImageWrap {
     max-width: 745px;
     margin: 0 auto;
+    height: auto;
+  }
+  .howWeOperateImage {
+    width: 100%;
+    height: auto;
+    transform: none;
   }
 }
 
 @media (max-width: 768px) {
-  .howWeOperateTitle {
-    font-size: 28px;
-    line-height: 40px;
-    margin-bottom: 40px;
+  .howWeOperateItemTitle {
+    white-space: normal;
   }
 }
 
@@ -386,12 +355,12 @@
 }
 
 .boundariesTitle {
-  margin: 0 0 48px;
+  margin: 0 0 clamp(32px, 5vw, 48px);
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 36px;
-  line-height: 72px;
+  font-size: clamp(26px, 3.4vw, 36px);
+  line-height: 1.3;
   color: #101828;
   text-align: center;
 }
@@ -401,7 +370,7 @@
   background: linear-gradient(180deg, #E6F7F7 0%, #FFFFFF 100%);
   border: 1.10776px solid rgba(0, 146, 147, 0.1);
   border-radius: 16px;
-  padding: 48px clamp(24px, 14vw, 198px);
+  padding: clamp(32px, 5vw, 48px) clamp(20px, 14vw, 198px);
 }
 
 .boundariesList {
@@ -411,7 +380,7 @@
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   column-gap: 32px;
-  row-gap: 40px;
+  row-gap: clamp(24px, 4vw, 40px);
 }
 
 .boundariesItem {
@@ -445,26 +414,13 @@
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 27px;
+  font-size: clamp(15px, 1.6vw, 18px);
+  line-height: 1.5;
   color: #101828;
 }
 
 @media (max-width: 768px) {
-  .boundariesTitle {
-    font-size: 28px;
-    line-height: 40px;
-    margin-bottom: 32px;
-  }
-  .boundariesCard {
-    padding: 32px 20px;
-  }
   .boundariesList {
     grid-template-columns: 1fr;
-    row-gap: 24px;
-  }
-  .boundariesItemText {
-    font-size: 16px;
-    line-height: 24px;
   }
 }

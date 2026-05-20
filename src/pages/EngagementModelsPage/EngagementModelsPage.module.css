@@ -169,8 +169,8 @@
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
+  font-size: clamp(14px, 1.4vw, 16px);
+  line-height: 1.6;
   letter-spacing: -0.3125px;
   color: #667085;
 }
@@ -193,8 +193,8 @@
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 18px;
-  line-height: 27px;
+  font-size: clamp(16px, 1.6vw, 18px);
+  line-height: 1.45;
   letter-spacing: -0.439453px;
   color: #101828;
 }
@@ -212,8 +212,8 @@
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: clamp(14px, 1.4vw, 16px);
+  line-height: 1.5;
   letter-spacing: -0.3125px;
   color: #667085;
 }
@@ -223,8 +223,8 @@
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: clamp(14px, 1.4vw, 16px);
+  line-height: 1.5;
   letter-spacing: -0.3125px;
   color: #101828;
 }
@@ -260,8 +260,8 @@
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 15px;
-  line-height: 22px;
+  font-size: clamp(13px, 1.3vw, 15px);
+  line-height: 1.5;
   letter-spacing: -0.234375px;
   color: #667085;
 }
@@ -362,8 +362,8 @@
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: clamp(17px, 1.8vw, 20px);
+  line-height: 1.4;
   letter-spacing: -0.449219px;
   color: #101828;
 }
@@ -374,8 +374,8 @@
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 15px;
-  line-height: 22px;
+  font-size: clamp(14px, 1.3vw, 15px);
+  line-height: 1.5;
   letter-spacing: -0.234375px;
   color: #667085;
 }

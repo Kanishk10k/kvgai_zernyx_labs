@@ -31,7 +31,11 @@ const coreCapabilities = [
   },
   {
     icon: coreCapabIcon3,
-    title: 'Pilot-Scale & Translational Research',
+    title: (
+      <>
+        Pilot-Scale &amp; Translational<br />Research
+      </>
+    ),
     items: [
       'Process optimization',
       'Reproducibility and robustness assessment',
@@ -123,7 +127,7 @@ export default function RdInfrastructurePage() {
 
           <div className={styles.coreCapabGrid}>
             {coreCapabilities.map(({ icon, title, items }) => (
-              <article key={title} className={styles.coreCapabCard}>
+              <article key={icon} className={styles.coreCapabCard}>
                 <img
                   src={icon}
                   alt=""
